@@ -696,6 +696,17 @@
                     <view key="view" id="Jhw-o1-hKD">
                         <rect key="frame" x="0.0" y="0.0" width="388" height="289"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBx-uW-EF8" customClass="LineGraphView">
+                                <rect key="frame" x="20" y="56" width="348" height="213"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="OBx-uW-EF8" firstAttribute="leading" secondItem="Jhw-o1-hKD" secondAttribute="leading" constant="20" id="HH2-H7-hnt"/>
+                            <constraint firstAttribute="trailing" secondItem="OBx-uW-EF8" secondAttribute="trailing" constant="20" id="K1T-NL-sMj"/>
+                            <constraint firstAttribute="bottom" secondItem="OBx-uW-EF8" secondAttribute="bottom" constant="60" id="XAo-Mk-MjS"/>
+                            <constraint firstItem="OBx-uW-EF8" firstAttribute="top" secondItem="Jhw-o1-hKD" secondAttribute="top" constant="20" id="njk-3y-5RA"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="sSP-oI-r5F" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

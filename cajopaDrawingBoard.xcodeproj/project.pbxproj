@@ -13,6 +13,7 @@
 		87EBFA631A919AB9006F5430 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87EBFA621A919AB9006F5430 /* Images.xcassets */; };
 		87EBFA661A919AB9006F5430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87EBFA641A919AB9006F5430 /* Main.storyboard */; };
 		87EBFA721A919AB9006F5430 /* cajopaDrawingBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EBFA711A919AB9006F5430 /* cajopaDrawingBoardTests.m */; };
+		87FE709C1A92F5B70074812A /* LineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FE709B1A92F5B70074812A /* LineGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		87EBFA6B1A919AB9006F5430 /* cajopaDrawingBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cajopaDrawingBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EBFA701A919AB9006F5430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87EBFA711A919AB9006F5430 /* cajopaDrawingBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cajopaDrawingBoardTests.m; sourceTree = "<group>"; };
+		87FE709A1A92F5B70074812A /* LineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineGraphView.h; sourceTree = "<group>"; };
+		87FE709B1A92F5B70074812A /* LineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineGraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				87EBFA601A919AB9006F5430 /* ViewController.m */,
 				87EBFA621A919AB9006F5430 /* Images.xcassets */,
 				87EBFA641A919AB9006F5430 /* Main.storyboard */,
+				87FE709A1A92F5B70074812A /* LineGraphView.h */,
+				87FE709B1A92F5B70074812A /* LineGraphView.m */,
 				87EBFA581A919AB9006F5430 /* Supporting Files */,
 			);
 			path = cajopaDrawingBoard;
@@ -218,6 +223,7 @@
 				87EBFA611A919AB9006F5430 /* ViewController.m in Sources */,
 				87EBFA5E1A919AB9006F5430 /* main.m in Sources */,
 				87EBFA5C1A919AB9006F5430 /* AppDelegate.m in Sources */,
+				87FE709C1A92F5B70074812A /* LineGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +410,7 @@
 				87EBFA771A919AB9006F5430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87EBFA781A919AB9006F5430 /* Build configuration list for PBXNativeTarget "cajopaDrawingBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +419,7 @@
 				87EBFA7A1A919AB9006F5430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
