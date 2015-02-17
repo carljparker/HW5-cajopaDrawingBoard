@@ -14,6 +14,11 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    
+    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    NSWindowController *wc = [sb instantiateControllerWithIdentifier:@"Drawing Board Window Controller"];
+
 }
 
 - (void)setRepresentedObject:(id)representedObject {
