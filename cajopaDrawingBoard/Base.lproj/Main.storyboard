@@ -669,9 +669,9 @@
             <objects>
                 <tabViewController tabStyle="toolbar" id="Arp-NP-6eP" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem identifier="" id="2L1-cH-A6j"/>
-                        <tabViewItem identifier="" id="1pw-xa-WBv"/>
-                        <tabViewItem id="qsw-lo-bMh"/>
+                        <tabViewItem label="Line Graph" identifier="" id="2L1-cH-A6j"/>
+                        <tabViewItem label="Shapes" identifier="" id="1pw-xa-WBv"/>
+                        <tabViewItem label="Art" id="qsw-lo-bMh"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="T43-QH-rp4">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
