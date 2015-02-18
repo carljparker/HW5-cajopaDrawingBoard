@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		87356BCF1A942C0900FCF380 /* ShapesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87356BCE1A942C0900FCF380 /* ShapesView.m */; };
+		87356BD21A94E7A900FCF380 /* art.m in Sources */ = {isa = PBXBuildFile; fileRef = 87356BD11A94E7A900FCF380 /* art.m */; };
 		87EBFA5C1A919AB9006F5430 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EBFA5B1A919AB9006F5430 /* AppDelegate.m */; };
 		87EBFA5E1A919AB9006F5430 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EBFA5D1A919AB9006F5430 /* main.m */; };
 		87EBFA611A919AB9006F5430 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87EBFA601A919AB9006F5430 /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* Begin PBXFileReference section */
 		87356BCD1A942C0900FCF380 /* ShapesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapesView.h; sourceTree = "<group>"; };
 		87356BCE1A942C0900FCF380 /* ShapesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapesView.m; sourceTree = "<group>"; };
+		87356BD01A94E7A900FCF380 /* art.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = art.h; sourceTree = "<group>"; };
+		87356BD11A94E7A900FCF380 /* art.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = art.m; sourceTree = "<group>"; };
 		87EBFA551A919AB9006F5430 /* cajopaDrawingBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cajopaDrawingBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87EBFA591A919AB9006F5430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87EBFA5A1A919AB9006F5430 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				87EBFA601A919AB9006F5430 /* ViewController.m */,
 				87EBFA621A919AB9006F5430 /* Images.xcassets */,
 				87EBFA641A919AB9006F5430 /* Main.storyboard */,
+				87356BD01A94E7A900FCF380 /* art.h */,
+				87356BD11A94E7A900FCF380 /* art.m */,
 				87356BCD1A942C0900FCF380 /* ShapesView.h */,
 				87356BCE1A942C0900FCF380 /* ShapesView.m */,
 				87FE709A1A92F5B70074812A /* LineGraphView.h */,
@@ -228,6 +233,7 @@
 				87EBFA611A919AB9006F5430 /* ViewController.m in Sources */,
 				87EBFA5E1A919AB9006F5430 /* main.m in Sources */,
 				87EBFA5C1A919AB9006F5430 /* AppDelegate.m in Sources */,
+				87356BD21A94E7A900FCF380 /* art.m in Sources */,
 				87356BCF1A942C0900FCF380 /* ShapesView.m in Sources */,
 				87FE709C1A92F5B70074812A /* LineGraphView.m in Sources */,
 			);
