@@ -25,7 +25,7 @@
     NSPoint startPoint = NSMakePoint(0, 100);
     NSPoint endPoint = NSMakePoint(0, 200);
     
-    [myArcPath moveToPoint:NSMakePoint(60, 60)];
+    [myArcPath moveToPoint:NSMakePoint(60, 120)];
 
     [myArcPath appendBezierPathWithArcFromPoint:startPoint toPoint:endPoint radius:30];
 
