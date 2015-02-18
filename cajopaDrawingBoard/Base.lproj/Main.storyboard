@@ -726,13 +726,24 @@
             </objects>
             <point key="canvasLocation" x="670" y="781"/>
         </scene>
-        <!--View Controller-->
+        <!--Shapes-->
         <scene sceneID="bcG-ng-nFs">
             <objects>
-                <viewController id="KJm-pY-Y2i" sceneMemberID="viewController">
+                <viewController id="KJm-pY-Y2i" customClass="shapes" sceneMemberID="viewController">
                     <view key="view" id="QQF-RT-GhA">
                         <rect key="frame" x="0.0" y="0.0" width="372" height="230"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rEP-lz-x9S" customClass="ShapesView">
+                                <rect key="frame" x="25" y="14" width="322" height="204"/>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rEP-lz-x9S" firstAttribute="leading" secondItem="QQF-RT-GhA" secondAttribute="leading" constant="25" id="O2H-gs-OzJ"/>
+                            <constraint firstItem="rEP-lz-x9S" firstAttribute="top" secondItem="QQF-RT-GhA" secondAttribute="top" constant="15" id="cZJ-ha-qgR"/>
+                            <constraint firstAttribute="bottom" secondItem="rEP-lz-x9S" secondAttribute="bottom" constant="15" id="keD-u0-RzW"/>
+                            <constraint firstAttribute="trailing" secondItem="rEP-lz-x9S" secondAttribute="trailing" constant="25" id="z9t-x7-XyH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="hfn-yf-eAE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
