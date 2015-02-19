@@ -7,6 +7,13 @@
 //
 
 #import "LineGraphView.h"
+#import "RandomPercentGenerator.h"
+
+@interface LineGraphView ()
+
+@property NSArray * peaks;
+
+@end
 
 @implementation LineGraphView
 
@@ -21,11 +28,18 @@
     NSLog(@"Bounds: Width: %f", self.bounds.size.width);
     NSLog(@"Bounds: Height: %f", self.bounds.size.height);
 
-    
+}
+
+- (NSArray *) refreshGraph {
     // Drawing code here.
     
-  
-
+    NSArray * peaks = [RandomPercentGenerator arrayOfPercents:6];
+    
+    [peaks enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+        NSLog(@"Peak #%lu: %@", (unsigned long)idx, obj);
+    }];
+    
+    return( peaks );
 }
 
 @end
