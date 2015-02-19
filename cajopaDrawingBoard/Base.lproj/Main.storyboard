@@ -689,10 +689,10 @@
             </objects>
             <point key="canvasLocation" x="97" y="674"/>
         </scene>
-        <!--View Controller-->
+        <!--Line GraphVC-->
         <scene sceneID="TU8-q3-DN3">
             <objects>
-                <viewController id="IXa-Qg-WEE" sceneMemberID="viewController">
+                <viewController id="IXa-Qg-WEE" customClass="LineGraphVC" sceneMemberID="viewController">
                     <view key="view" id="Jhw-o1-hKD">
                         <rect key="frame" x="0.0" y="0.0" width="388" height="289"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -703,6 +703,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="refreshPeaks:" target="IXa-Qg-WEE" id="WuR-4z-n7c"/>
+                                </connections>
                             </button>
                             <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBx-uW-EF8" customClass="LineGraphView">
                                 <rect key="frame" x="20" y="56" width="348" height="213"/>
