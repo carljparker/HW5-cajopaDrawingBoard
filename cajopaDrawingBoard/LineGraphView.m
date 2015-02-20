@@ -9,18 +9,21 @@
 #import "LineGraphView.h"
 #import "LineGraphVC.h"
 
+
 @interface LineGraphView ()
 
 @property (readwrite) NSArray * peaks;
 
 @end
 
+
 @implementation LineGraphView
 
+
 - (void)drawRect:(NSRect)dirtyRect {
+    
     [super drawRect:dirtyRect];
     
-   
     NSLog(@"--- Line Graph View ---");
     NSLog(@"Frame: Width: %f", self.frame.size.width);
     NSLog(@"Frame: Height: %f", self.frame.size.height);
@@ -33,7 +36,29 @@
         NSLog(@"Peak #%lu: %f", (unsigned long)idx, printPercent);
     }];
     
+    [[NSColor orangeColor] set];
+    [NSBezierPath fillRect:dirtyRect];
+    
+    [[NSColor blackColor] setStroke];
+    [[NSColor redColor] setFill];
+  
+    
+    float graphWidth = self.bounds.size.width;
+    float graphHeight = self.bounds.size.height;
+    
+    NSBezierPath * myGraphPath = [NSBezierPath bezierPath];
+    
+    NSPoint startPoint = NSMakePoint(0, 0.05 * graphHeight);
+    NSPoint endPoint = NSMakePoint(graphWidth, 0.05 * graphHeight);
+    
+    [myGraphPath moveToPoint:startPoint];
+    
+    [myGraphPath lineToPoint:endPoint];
+    
+    [myGraphPath stroke];
+    
 }
+
 
 - (void) refreshData:(NSArray*) peaks {
 
