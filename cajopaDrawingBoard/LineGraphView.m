@@ -9,6 +9,11 @@
 #import "LineGraphView.h"
 #import "LineGraphVC.h"
 
+@interface LineGraphView ()
+
+@property (readwrite) NSArray * peaks;
+
+@end
 
 @implementation LineGraphView
 
@@ -22,7 +27,19 @@
     
     NSLog(@"Bounds: Width: %f", self.bounds.size.width);
     NSLog(@"Bounds: Height: %f", self.bounds.size.height);
+    
+    [self.peaks enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+        float printPercent = ((NSNumber *) obj).floatValue;
+        NSLog(@"Peak #%lu: %f", (unsigned long)idx, printPercent);
+    }];
+    
+    
+}
 
+- (void) refreshData:(NSArray*) peaks {
+
+    self.peaks = peaks;
+    
 }
 
 

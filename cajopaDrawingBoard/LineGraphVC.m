@@ -7,11 +7,12 @@
 //
 
 #import "LineGraphVC.h"
+#import "LineGraphView.h"
 #import "RandomPercentGenerator.h"
 
 @interface LineGraphVC ()
 
-@property (readwrite) NSArray * peaks;
+@property (weak) IBOutlet LineGraphView *lineGraphView;
 
 @end
 
@@ -31,8 +32,8 @@
         NSLog(@"Peak #%lu: %@", (unsigned long)idx, obj);
     }];
     
-    self.peaks = peaks;
-    
+    [self.lineGraphView refreshData:peaks];
+    [self.lineGraphView setNeedsDisplay:YES];
 }
 
 @end

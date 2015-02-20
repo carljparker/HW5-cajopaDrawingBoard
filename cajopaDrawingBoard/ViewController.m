@@ -18,6 +18,7 @@
     NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
     
     NSWindowController *wc = [sb instantiateControllerWithIdentifier:@"Drawing Board Window Controller"];
+    
 
 }
 

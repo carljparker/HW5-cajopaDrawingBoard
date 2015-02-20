@@ -34,3 +34,4 @@ out, then connect the Tab View Controller to it.
 
 *** END ***
 
+[self.shapeV setNeedsDisplay:YES]

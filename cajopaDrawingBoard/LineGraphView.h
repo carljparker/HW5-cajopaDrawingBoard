@@ -10,4 +10,6 @@
 
 @interface LineGraphView : NSView
 
+- (void) refreshData:(NSArray*) peaks;
+
 @end

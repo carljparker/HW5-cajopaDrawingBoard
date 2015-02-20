@@ -708,7 +708,7 @@
                                 </connections>
                             </button>
                             <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBx-uW-EF8" customClass="LineGraphView">
-                                <rect key="frame" x="20" y="56" width="348" height="213"/>
+                                <rect key="frame" x="35" y="56" width="348" height="213"/>
                             </customView>
                         </subviews>
                         <constraints>
@@ -718,6 +718,9 @@
                             <constraint firstItem="OBx-uW-EF8" firstAttribute="top" secondItem="Jhw-o1-hKD" secondAttribute="top" constant="20" id="njk-3y-5RA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lineGraphView" destination="OBx-uW-EF8" id="2y4-CK-KGe"/>
+                    </connections>
                 </viewController>
                 <customObject id="sSP-oI-r5F" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
