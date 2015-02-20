@@ -33,7 +33,6 @@
         NSLog(@"Peak #%lu: %f", (unsigned long)idx, printPercent);
     }];
     
-    
 }
 
 - (void) refreshData:(NSArray*) peaks {
