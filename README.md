@@ -1,37 +1,33 @@
 
+# HW 5 -- Drawing Board -- Carl Parker (cajopa) #
 
-## Project Notes ##
+This assignment was really interesting. I have done any kind of graphics
+programming since I was a kid playing with my Apple II+ . . . back in
+the day. The idea that I could use these techniques to design custom
+interfaces is intriguing.
+
+It could be interesting to talk a little about TextView and how to
+combine text with these graphics programming techniques.
+
+For the art tab, I experimented with drawing lines by feeding an array
+of points into a `for` loop.
 
 
-The main.m function calls NSApplicationMain, but where is that?
+## Resources ## 
 
-    main.m
-    11-int main(int argc, const char * argv[]) {
-    12:    return NSApplicationMain(argc, argv);
-    13-}
+I found Apple's View Programming Guide to provide a lot of good
+background information:
 
-How would I programmatically set the labels on my tab view controller?
+>> <https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CocoaViewsGuide/Introduction/Introduction.html>
 
-I can do the following in ViewController.m :: viewDidLoad
 
-    NSStoryboard *sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    NSWindowController *wc = [sb instantiateControllerWithIdentifier:@"Drawing Board Window Controller"];
+## Question ##
 
-but from here, how do I get to the tab view controller? (I set the
-string "Drawing Board Window Controller" as the StoryBoard ID in
-Identity Inspector.
+This isn't directly related to homework topic, but it did come up for me
+during the assignment:
 
----
-
-To use a Tab View Controller, you probably need to delete the View
-Controller that comes standard with the Window Controller.
-
-The Tab View Controller comes with two tabs. To get a third, just search
-for View Controller in the UI palette and drag another View Controller
-out, then connect the Tab View Controller to it.
+>> How would I programmatically set the labels on my tab view controller?
 
 
 *** END ***
 
-[self.shapeV setNeedsDisplay:YES]
