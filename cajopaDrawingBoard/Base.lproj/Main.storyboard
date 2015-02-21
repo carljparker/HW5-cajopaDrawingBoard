@@ -697,7 +697,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="388" height="289"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z32-6y-Oxw">
+                            <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z32-6y-Oxw">
                                 <rect key="frame" x="14" y="8" width="82" height="32"/>
                                 <buttonCell key="cell" type="push" title="Refresh" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="k68-bW-AEQ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -707,14 +707,14 @@
                                     <action selector="refreshPeaks:" target="IXa-Qg-WEE" id="WuR-4z-n7c"/>
                                 </connections>
                             </button>
-                            <customView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBx-uW-EF8" customClass="LineGraphView">
-                                <rect key="frame" x="35" y="56" width="348" height="213"/>
+                            <customView ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OBx-uW-EF8" customClass="LineGraphView">
+                                <rect key="frame" x="20" y="61" width="348" height="208"/>
                             </customView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="OBx-uW-EF8" firstAttribute="leading" secondItem="Jhw-o1-hKD" secondAttribute="leading" constant="20" id="HH2-H7-hnt"/>
                             <constraint firstAttribute="trailing" secondItem="OBx-uW-EF8" secondAttribute="trailing" constant="20" id="K1T-NL-sMj"/>
-                            <constraint firstAttribute="bottom" secondItem="OBx-uW-EF8" secondAttribute="bottom" constant="60" id="XAo-Mk-MjS"/>
+                            <constraint firstItem="z32-6y-Oxw" firstAttribute="top" secondItem="OBx-uW-EF8" secondAttribute="bottom" constant="25" id="h5Z-YX-BBt"/>
                             <constraint firstItem="OBx-uW-EF8" firstAttribute="top" secondItem="Jhw-o1-hKD" secondAttribute="top" constant="20" id="njk-3y-5RA"/>
                         </constraints>
                     </view>

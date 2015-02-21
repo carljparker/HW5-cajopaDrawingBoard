@@ -50,11 +50,23 @@
     
     NSPoint startPoint = NSMakePoint(0, 0.05 * graphHeight);
     NSPoint endPoint = NSMakePoint(graphWidth, 0.05 * graphHeight);
+
     
     [myGraphPath moveToPoint:startPoint];
     
-    [myGraphPath lineToPoint:endPoint];
+    float widthIncrement = graphWidth / self.peaks.count-1;
+    float currentWidthPos = startPoint.x + widthIncrement;
     
+    
+    for (id nextPeak in self.peaks ) {
+        [myGraphPath lineToPoint:NSMakePoint(currentWidthPos, ((NSNumber *)nextPeak).floatValue * graphHeight)];
+        [myGraphPath stroke];
+                                             
+        currentWidthPos = currentWidthPos + widthIncrement;
+
+    }
+    
+    [myGraphPath lineToPoint:endPoint];
     [myGraphPath stroke];
     
 }
