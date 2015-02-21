@@ -13,12 +13,17 @@ For the art tab, I experimented with drawing lines by feeding an array
 of points into a `for` loop.
 
 
-## Resources ## 
+## Resources ##
 
 I found Apple's View Programming Guide to provide a lot of good
 background information:
 
->> <https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CocoaViewsGuide/Introduction/Introduction.html>
+> <https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CocoaViewsGuide/Introduction/Introduction.html>
+
+I also like the following video that is on Marty's channel from several
+months ago:
+
+> <https://www.youtube.com/watch?v=J83NtwqBQo4>
 
 
 ## Question ##
@@ -26,7 +31,7 @@ background information:
 This isn't directly related to homework topic, but it did come up for me
 during the assignment:
 
->> How would I programmatically set the labels on my tab view controller?
+> How would I programmatically set the labels on my tab view controller?
 
 
 *** END ***
