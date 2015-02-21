@@ -10,6 +10,15 @@
 
 @implementation art
 
+
+- (CGPoint *) drawPoint:(NSArray *)drawSpec xIdx:(NSUInteger)xIdx yIdx:(NSUInteger)yIdx width:(float)width height:(float)height {
+
+    NSUInteger xCoord = (((NSNumber *)drawSpec[xIdx][1]).floatValue) * width;
+
+    NSUInteger yCoord = (((NSNumber *)drawSpec[yIdx][2]).floatValue) * height;
+
+}
+
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
 
@@ -22,12 +31,36 @@
 
     // Drawing code here.
     
-    [[NSColor orangeColor] set];
+    [[NSColor yellowColor] set];
     [NSBezierPath fillRect:dirtyRect];
+    
+    [[NSColor blackColor] setStroke];
+    [[NSColor orangeColor] setFill];
+    
+    
+    float drawingWidth = self.bounds.size.width;
+    float drawingHeight = self.bounds.size.height;
+    
+    NSArray * squPillar = @[ @[@0.40, @0.40], @[@0.40, @0.90], @[@0.60, @0.90], @[@0.60, @0.40] ];
+    
+    NSBezierPath * myDrawingPath = [NSBezierPath bezierPath];
+    
+    [myDrawingPath moveToPoint:NSMakePoint(
+        ((((NSNumber *)squPillar[1][1]).floatValue) * drawingWidth),
+        ((((NSNumber *)squPillar[1][2]).floatValue) * drawingHeight)
+     )];
+    
+    [myDrawingPath lineToPoint:NSMakePoint(
+        ((((NSNumber *)squPillar[2][1]).floatValue) * drawingWidth),
+        ((((NSNumber *)squPillar[2][2]).floatValue) * drawingHeight)
+     )];
+
+    
+    [myDrawingPath stroke];
+    [myDrawingPath fill];
     
     
     NSBezierPath * myArcPath = [NSBezierPath bezierPath];
-    
     
     NSPoint startPoint = NSMakePoint(0, 100);
     NSPoint endPoint = NSMakePoint(0, 200);
