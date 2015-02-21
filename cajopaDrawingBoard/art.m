@@ -52,14 +52,25 @@
     
     int idx;
     
-    NSArray * squPillar = @[ @[@0.40, @0.40], @[@0.40, @0.90], @[@0.60, @0.90], @[@0.60, @0.40] ];
+    NSArray * letterC = @[   @[@0.40, @0.40],  // starting point, we "moveTo" here
+                             @[@0.40, @0.90],
+                             @[@0.60, @0.90],
+                             @[@0.60, @0.85],
+                             @[@0.45, @0.85],
+                             @[@0.45, @0.45],
+                             @[@0.60, @0.45],
+                             @[@0.60, @0.40],
+                             @[@0.40, @0.40]
+                        ];
     
-    drawingPoint = [self drawingPoint:squPillar pIdx:0 width:drawingWidth height:drawingHeight];
-    [myDrawingPath moveToPoint:drawingPoint];
-    
-    for ( idx=1; idx < squPillar.count; idx++ ) {
-        drawingPoint = [self drawingPoint:squPillar pIdx:idx width:drawingWidth height:drawingHeight];
-        [myDrawingPath lineToPoint:drawingPoint];
+    for ( idx=0; idx < letterC.count; idx++ ) {
+        drawingPoint = [self drawingPoint:letterC pIdx:idx width:drawingWidth height:drawingHeight];
+        if ( idx == 0 ) {
+            [myDrawingPath moveToPoint:drawingPoint];
+        }
+        else {
+            [myDrawingPath lineToPoint:drawingPoint];
+        }
     }
     
     [myDrawingPath stroke];
