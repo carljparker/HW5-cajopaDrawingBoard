@@ -26,7 +26,7 @@
 - (IBAction)refreshPeaks:(id)sender {
     // Drawing code here.
         
-    NSArray * peaks = [RandomPercentGenerator arrayOfPercents:6];
+    NSArray * peaks = [RandomPercentGenerator arrayOfPercents:9];
         
     [peaks enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
         NSLog(@"Peak #%lu: %@", (unsigned long)idx, obj);
